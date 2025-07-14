@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-dYnbK7gGzT7nvvv8G1D6PhPYQ0n9AxYJb6oK3cyw7kpwHDVxl1+9f5fQUMzS7jz3E4S2lYoId6lzRp8+wHSsw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+    <link rel="stylesheet" href="./MyToDoList.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Needed for icons -->
+    <script src="./MyToDoList.js" defer></script>
+  </head>
+
+  <body>
+    <div class="bg-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="heading">My To-Do List</h1>
+            <div class="Input-container">
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="InputList">Description</label>
+                  <input
+                    id="InputList"
+                    class="InputList"
+                    type="text"
+                    placeholder="what needs to be done?"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="PriorityInput">Priority</label>
+                  <input
+                    id="PriorityInput"
+                    class="Priority"
+                    type="text"
+                    placeholder="Enter Priority (Eg:- High, Medium, Low)"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="DeadlineInput">Deadline</label>
+                  <input id="DeadlineInput" class="Deadline" type="date" />
+                </div>
+              </div>
+              <button class="add_btn" onclick="AddEvent()">Add</button>
+            </div>
+            <div class="list-headings d-flex flex-row">
+              <h1 class="ToDo-Description">Decription</h1>
+              <h1 class="ToDo-Priority">Priority</h1>
+              <h1 class="ToDo-Deadline">Deadline</h1>
+            </div>
+            <ul class="todo-items-container" id="todoItemsContainer"></ul>
+            <button class="save_btn" id="saveToDoButton">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

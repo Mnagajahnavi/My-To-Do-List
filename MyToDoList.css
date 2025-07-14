@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    background-color: #FAFAF8;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #CFDFC4;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-family: fantasy;
+    text-align: center;
+    color: #27391D;
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.Input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #27391D;
+}
+
+.InputList,
+.Priority,
+.Deadline {
+    background-color: #FAFAF8;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.add_btn {
+    color: white;
+    background-color: #ca2286;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.save_btn {
+    color: white;
+    background-color: #ca2286;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.list-headings {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #27391D;
+    font-size: 1rem;
+    border-bottom: 2px solid #27391D;
+    padding-bottom: 10px;
+}
+
+.list-headings h1 {
+    flex: 1;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ToDo-Priority {
+    font-weight: bold;
+}
+
+.ToDo-Description {
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+.ToDo-Deadline {
+    font-weight: bold;
+}
+
+
+.todo-items-container {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.todo-item-container {
+    display: flex;
+    align-items: center;
+    background-color: #FAFAF8;
+    border-left: 5px solid #CA2286;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.checkbox-Input {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.label-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox-label,
+.priority-text,
+.deadline-text {
+    font-family: "Roboto";
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px;
+    flex: 1;
+    word-break: break-word;
+}
+
+.delete-icon-container {
+    text-align: right;
+    min-width: 50px;
+    text-align: center;
+}
+
+.delete-text {
+    font-size: 18px;
+    color: #ca2286;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.delete-text:hover {
+    color: darkred;
+}
+
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .label-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox-label,
+    .priority-text,
+    .deadline-text {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .list-headings {
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .list-headings h1 {
+        text-align: left;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
